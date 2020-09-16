@@ -1,0 +1,38 @@
+package classe;
+
+public class ProdutoTeste {
+
+	public static void main(String[] args) {
+		
+		Produto p1 = new Produto();
+		p1.nome = "notebook";
+		p1.preco = 3500.00;
+		p1.desconto = 0.25;
+		
+		Produto notebook = new Produto("Acer 3400", 2850, 0.25);
+		
+		//outra maneira possivel
+		var p2 = new Produto();
+		p2.nome = "caneta";
+		p2.preco = 5.00;
+		p2.desconto = .10;
+		
+		System.out.println(p1.nome);
+		System.out.println(p2.nome);
+		
+		double precoFinal1 = p1.Discount();
+		double precoFinal2 = p2.Discount();
+		
+		double mediaCarrinho = (precoFinal1 + precoFinal2) / 2 ;
+		
+		System.out.printf("media carrinho = R$%.2f.\n", mediaCarrinho);
+		
+		double desc = p1.Discount();
+		
+		System.out.printf("Note com desconto: R$ %.2f\n", desc);
+		System.out.println(notebook);
+		
+		
+		
+	}
+}

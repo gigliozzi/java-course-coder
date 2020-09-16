@@ -1,0 +1,9 @@
+package controle;
+
+public class SwitchComBreak {
+	
+	Public static void main (String[] args) {
+		
+	}
+
+}

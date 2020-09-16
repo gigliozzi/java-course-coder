@@ -1,0 +1,13 @@
+package classe;
+
+public class Data {
+	
+	int dia;
+	int mes;
+	int ano;
+	
+	String ObterDataFormatada(String d, String m, String ano) {
+		return (d + "/" + m + "/" + a);
+	}
+	
+}

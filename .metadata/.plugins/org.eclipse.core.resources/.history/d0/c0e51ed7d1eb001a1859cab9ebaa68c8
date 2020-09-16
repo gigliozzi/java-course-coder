@@ -1,0 +1,47 @@
+package controle;
+
+import java.util.Scanner;
+
+public class DesafioWhile {
+
+	public static void main(String[] args) {
+					
+		Scanner entrada = new Scanner(System.in);
+
+		int quantidadeDeNotas = 0;
+		double nota = 0;
+		double total = 0;
+		
+		while(nota != -1) {
+			System.out.println("Informe a nota");
+			nota = entrada.nextDouble();
+			
+			if(nota <= 10 && nota >= 0) {
+				total += nota;
+				quantidadeDeNotas++;
+			}
+		}
+		
+		
+		//Cauculo media
+		double media = total / quantidadeDeNotas;
+		System.out.println("media= " + media);
+		
+		entrada.close();
+
+		// calcular a media das notas recebidas
+		// usuário digita nota valida
+		// armazenar a nota digitada numa
+		// variavel TOTAL -> guarda a soma 
+		// de todas as notas
+		// usar outra variavel para armazenar
+		// quantas notas válidas foram digitadas?
+		// toda vez que o usuário digitar uma
+		// nota valida, contabiliza 1 e assim
+		// para cada nota digitada, para no final
+		// para sair, quando o usuário 
+		// digitar -1
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+package classe;
+
+public class AreaCirc {
+	
+	double raio;
+	static final double pi = 3.14;
+	// static -> 
+	// atributo passa a pertencer à classe
+	// define que o atributo pode ser acessado via classe
+	// não é necessário instanciar um objeto desse tipo
+	
+	// final -> define o valor como constante (não poderá
+	// ser alterado
+	
+	
+	AreaCirc(double raioInicial) {
+		raio = raioInicial;
+	}
+
+	double area() {
+		return pi * Math.pow(raio, 2);
+	}
+	
+	static double area(double raio) {
+		return pi * Math.pow(raio, 2);
+	}
+}

@@ -1,0 +1,43 @@
+package fundamentos;
+
+import java.util.Scanner;
+
+public class DesafioFinalModuloFundamentos {
+	
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+				
+		System.out.println("Digite o 1º numero: ");
+		String num1 = entrada.nextLine();
+		
+		System.out.println("Digite o 2º numero: ");
+		String num2 = entrada.nextLine();
+		
+		System.out.println("Digite a operação: "
+				+ "soma +"
+				+ "subtração -"
+				+ "divisão /"
+				+ "multiplicação *");
+		String oper = entrada.nextLine();
+		
+		double valor1 = Double.parseDouble(num1);
+		double valor2 = Double.parseDouble(num2);
+		double matematico = Double.parseDouble(oper);
+				
+		double resultado = valor1 + matematico + valor2;
+		
+		System.out.println(resultado);
+		
+		
+		
+		
+		
+		
+		entrada.close();
+		
+		
+		
+	}
+
+}

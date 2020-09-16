@@ -1,0 +1,25 @@
+package classe;
+
+public class DataTeste {
+
+	public static void main(String[] args) {
+		
+		Data data1 = new Data();
+		Data data2 = new Data();
+		
+		data1.dia = 5;
+		data1.mes = "agosto";
+		data1.ano = 2006;
+		
+		System.out.println(data1.dia +" de "+ data1.mes+" de "+ data1.ano);
+
+		data1.dia = 13;
+		data1.mes = "junho";
+		data1.ano = 2013;
+		
+		System.out.println(data1.dia +" de "+ data1.mes+" de "+ data1.ano);
+		
+
+	}
+
+}

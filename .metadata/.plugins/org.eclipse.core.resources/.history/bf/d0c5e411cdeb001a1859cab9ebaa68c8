@@ -1,0 +1,49 @@
+package controle;
+
+import java.util.Scanner;
+
+public class DesafioWhile {
+
+	public static void main(String[] args) {
+		
+		//calcular a media das notas recebidas
+		
+		// usuário digita nota valida
+		
+		// armazenar a nota digitada numa
+		// variavel TOTAL -> guarda a soma 
+		// de todas as notas
+		
+		// usar outra variavel para armazenar
+		// quantas notas válidas foram digitadas?
+		
+		// toda vez que o usuário digitar uma
+		// nota valida, contabiliza 1 e assim
+		// para cada nota digitada, para no final
+		
+		// para sair, quando o usuário 
+		// digitar -1
+		
+		Scanner entrada = new Scanner(System.in);
+
+		String valor = entrada.nextLine();
+		
+		
+		// função p converter string em valor numerico
+		
+		double quantidadeDeNotasDigitadas = 0;
+		double somaDasNotas = 0;
+		
+		
+		while(valor.equalsIgnoreCase("-1")) {
+			System.out.println("Digite uma nota: ");
+			double nota = Double.parseDouble(valor);
+			quantidadeDeNotasDigitadas = quantidadeDeNotasDigitadas + 1;
+			somaDasNotas = somaDasNotas + nota;		
+		}
+		
+		entrada.close();
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package controle;
+
+public class DesafioFor {
+
+	public static void main(String[] args) {
+
+		String texto = "#";
+		
+		for(int = 1; i <= 5; i++) {
+			System.out.println(valor);
+			valor += "#";
+		}
+		
+	}
+
+}
